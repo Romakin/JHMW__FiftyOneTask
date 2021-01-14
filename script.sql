@@ -6,7 +6,7 @@ CREATE TABLE PERSONS (
     city_of_living varchar(500) DEFAULT ''  NOT NULL
     PRIMARY KEY (name, surname, age)
 );
-CREATE UNIQUE INDEX persons_phones ON PERSONS(phone_number);
+CREATE UNIQUE INDEX person_phones ON PERSONS(phone_number);
 
 INSERT INTO PERSONS(
     name,
